@@ -1,0 +1,46 @@
+<!--
+--------------
+Programmer:  [Jessica Alexander]
+Course:      ITSE-1306 (Intro to PHP)
+Instructor:  Cesar "Coach" Marrero
+Assignment:  [Week9]
+Description: [Web Application]
+--------------
+-->
+<?php
+ob_start();
+
+?><!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="True">
+  <title><?php 
+	if (defined('TITLE')) { 
+		print TITLE;
+	} else { 
+		print 'DOGS R US';
+	}
+	?></title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/myconcise.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/mymasthead.css" />
+</head>
+<body>
+
+<header container class="siteHeader">
+  <div row>
+    <h1 column=4 class="logo"><a href="Dogs.php">DOGS R US!</a></h1>
+    <nav column="8" class="nav">
+      <ul>
+        <li><a href="Puppies.php">Puppies</a></li>
+        <li><a href="Adult Dogs.php">Adult Dogs</a></li>
+        <li><a href="Senior Dogs.php">Senior Dogs</a></li>
+        <li><a href="Adoption.php"> Adoption</a></li>
+     </ul>
+    </nav>
+  </div>
+</header>
+
+  <main container class="siteContent">
